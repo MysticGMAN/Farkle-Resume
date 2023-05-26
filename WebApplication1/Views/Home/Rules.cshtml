@@ -1,0 +1,59 @@
+﻿@model Farkle.Views.Home.RulesModel
+@{
+    ViewData["Title"] = "Rules";
+}
+<div class="rules-page">
+
+<h1>@ViewData["Title"]</h1>
+    <p>
+        Each player takes their turn rolling all six dice and uses the scoring chart to see if they have any matching
+        combinations. Any die or dice that score points may be set aside and that player may choose to roll their remaining
+        dice again. The player must set aside at least one scoring die but it is not required to set aside all scoring dice.
+        Any dice that are not set aside may be rolled again. If all six dice are set aside, the player can choose to roll
+        all six dice again and continue adding to their turns score or they can bank all their points and end their turn.
+        A players turn ends when they decide to bank after setting aside or until they fail to roll any scoring dice.
+        When a player rolls no scoring dice, they committed farkle. If a player farkles, they lose all points set aside during that turn
+        and their turn automatically ends. At the end of a players turn, their points set aside are banked and kept in their total score which
+        cannot be lost. 
+    </p>
+    <table class="table">
+        <thead>
+            <tr>               
+                <th scope="col">Scoring</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1 = 100 pts</td>
+                <td>Four of any number = 1,000 pts</td>
+            </tr>
+            <tr>
+                <td>50 = 50 pts</td>
+                <td>Five of any number = 2,000 pts</td>
+            </tr>
+            <tr>
+                <td>Three 1s = 1000 pts</td>
+                <td>Six of any number = 3,000 pts</td>
+            </tr>
+            <tr>
+                <td>Three 2s = 200 pts</td>
+                <td>1-6 Straight = 1,500 pts</td>
+            </tr>
+            <tr>
+                <td>Three 3s = 300 pts</td>
+                <td>Three pair = 1,500 pts</td>
+            </tr>
+            <tr>
+                <td>Three 4s = 400 pts</td>
+                <td>Four-of-a-kind and a pair = 1,500 pts</td>
+            </tr>
+            <tr>
+                <td>Three 5s = 500 pts</td>
+                <td>Two triplets = 2,500 pts</td>
+            </tr>
+            <tr>
+                <td>Three 6s = 600 pts</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

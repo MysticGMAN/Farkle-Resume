@@ -1,0 +1,187 @@
+@font-face{
+    font-family: "Hackbot";
+    src: url('../fonts/Hackbot.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+#farkle-text {
+    font-family: Hackbot;
+    font-size: 150px !important;
+    text-shadow: 0 0 0.3em #ffd700;
+}
+
+#title-text {
+    color: #fad25a;
+}
+html {
+  font-size: 14px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  height: 100%;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin-bottom: 60px;
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+
+    color: #D4AF37;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.navbar {
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: url('../images/banner2.jpeg');
+}
+
+.navbar::before {
+    
+    
+    
+    background-size: cover;
+    opacity: 0.95;
+    z-index: -1;
+}
+
+.table {
+    color: #D4AF37;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&effect=3d:wght@700&display=swap');
+div.game {
+    font-family: 'Oswald';
+    position: absolute;
+    top: 50px;
+}
+
+img.dice {
+    width: 150px;
+}
+
+div.score {
+    font-family: 'Oswald';
+    
+}
+
+.navbar-nav .nav-link-c {
+    color: #D4AF37 !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.menu-button{
+    text-align: center;
+}
+
+.menu-button .btn {
+    margin: 180px 110px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-button .btn:hover {
+    background-color: black;
+    color: #D4AF37;
+    box-shadow: 0px 0px 10px 5px rgba(212,175,55,0.5);
+    border: 2px solid #D4AF37;
+}
+
+
+.footer {
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url('../images/banner2.jpeg');
+}
+
+/*footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/banner2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}*/
+
+
+
+.footer{
+    color: white !important;
+}
+.footer a{
+    color: darkorange;
+}
+
+.nav-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    transition: all 0.2s ease-in-out;
+   
+}
+
+.rules-page{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.rules-page td {
+    border-color: #D4AF37;
+}
+
+.rules-page th{
+    font-size: 20px;
+}
+
+.rules-page tr{
+    font-size: 17px;
+}
+
+.rules-page p{
+    font-size: 18px;
+}

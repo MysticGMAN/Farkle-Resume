@@ -1,0 +1,108 @@
+﻿@namespace Farkle.Classes
+
+
+
+@{
+    ViewData["Title"] = "Farkle";
+}
+
+
+<div class="text-center score font-effect-3d">
+    
+    <h1 class="display-1">Farkle</h1>
+
+</div>
+    <table style="width:100%" class="text-center">
+        <tr>
+            <th style="width:10%">AI Dave Score</th>
+            <th>5000 To Win</th>
+            <th style="width:10%">Nerd Score (You)</th>
+        </tr>
+    </table>
+<div class="container position-relative">
+    <div class="container border game">
+        <form>
+        <table style="width:100%; background:rgba(0,0,0,.8);" class="text-center">
+            <tr style="height:40px">
+                <td>Stuff is in here</td>
+            </tr>
+            <tr>
+                <td>Who Is Currently Playing</td>
+            </tr>
+            <tr style="height:80px">
+                <td>
+                    @if(FarkleModel.DiceRoll != null){
+                        @for (int j = 0; j < FarkleModel.DiceRoll.Count; j++)
+                        {
+                           @* @if (FarkleModel.DiceRoll[j] > 0)
+                            {*@
+
+                                <asp:Button name="Dice-@j" id="Dice-@j" class="btn" value="@FarkleModel.DiceRoll[j]"><img class="dice" src="@FarkleModel.DiceImg[j]"/></asp:Button>
+                                
+                            
+                        }
+                    }
+
+                       
+                </td>
+            </tr>
+            <tr style="height:80px">
+                <td>Selected Dice</td>
+            </tr>
+            <tr style="height:80px">
+                <td class=" align-items-center">
+                    <button type="submit" id="btnRoll" class="btn btn-outline-light" CausesValidation="False">Roll</button>
+                    <button id="btnSubSelect" class="btn btn-outline-light">Submit Selection</button>
+                    <button id="btnBank" class="btn btn-outline-light">Bank Points</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+   
+        
+            @*<h4>TOTAL/5000</h4>
+            <h4>&emsp;&emsp;&emsp;&ensp;2700</h4>
+            <p>round</p>
+            <p>&emsp;&emsp;&emsp;&ensp;0</p>
+            <p>selected</p>
+        
+        <div class="row">
+            <div class="col-lg">
+                
+                <img src="/images/sqaureborder1.png" alt="current score" style="width:200px;height:200px;">
+
+            </div>
+            <div class="col-lg">
+                One of three columns
+            </div>
+            <div class="col-lg">
+                One of three columns
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>*@
+    </div>
+
+</div>
