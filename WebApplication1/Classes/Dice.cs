@@ -14,7 +14,7 @@ namespace Farkle
     {
         /*public  List<int>*/
 
-        
+
 
         private readonly Dictionary<int, int> _sortReset = new Dictionary<int, int>()
         {
@@ -53,6 +53,7 @@ namespace Farkle
             {
                 _diceRoll = value;
             }
+
         }
 
         public int DiceLeft { get; set; }
@@ -99,13 +100,13 @@ namespace Farkle
             for (int i = 1; i <= diceLeft; i++)
             {
                 addToRoll(rand.Next(1, diceLeft));
-                
+
             }
 
             PlayableRoll();
         }
 
-        
+
 
         private void SortRoll()
         {
@@ -134,7 +135,7 @@ namespace Farkle
             }
         }
 
-        
+
         /*public */
         /*public String RollToString ()
         {

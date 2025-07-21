@@ -4,9 +4,9 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace Farkle.Models
 {
-    public static class FarkleModel
+    public class FarkleModel
     {
-        public static Player P = new Player();
+        public Player P = new Player();
 
         /*public static FarkleModel fm = new FarkleModel();*/
 
@@ -27,16 +27,16 @@ namespace Farkle.Models
         public static bool turnOver = false;
         public static bool TurnOver { get { return turnOver; } set { turnOver = value; } }
 
-        
 
-        public static List<int> DiceRoll { get; set; }
 
-        public static List<string> _diceImg = new List<string>(new string[6]);
+        public List<int> DiceRoll { get; set; } = new List<int>();
 
-        public static List<string> DiceImg { get { return _diceImg; } set { _diceImg = value; } }
+        public List<string> _diceImg = new List<string>(new string[6]);
 
-        public static List<string> DicePath { get { return _dicePath; } }
+        public List<string> DiceImg { get { return _diceImg; } set { _diceImg = value; } }
 
-        
+        public List<string> DicePath { get { return _dicePath; } }
+
+
     }
 }

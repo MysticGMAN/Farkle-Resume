@@ -1,5 +1,5 @@
 ﻿@namespace Farkle.Classes
-
+@model Farkle.Models.FarkleModel
 
 
 @{
@@ -21,7 +21,7 @@
     </table>
 <div class="container position-relative">
     <div class="container border game">
-        <form>
+        <form asp-action="Roll" method="post">
         <table style="width:100%; background:rgba(0,0,0,.8);" class="text-center">
             <tr style="height:40px">
                 <td>Stuff is in here</td>
@@ -31,13 +31,14 @@
             </tr>
             <tr style="height:80px">
                 <td>
-                    @if(FarkleModel.DiceRoll != null){
-                        @for (int j = 0; j < FarkleModel.DiceRoll.Count; j++)
+                    
+                    @if(Model.DiceRoll != null){
+                        @for (int j = 0; j < Model.DiceRoll.Count; j++)
                         {
-                           @* @if (FarkleModel.DiceRoll[j] > 0)
+                           @* @if (Model.DiceRoll[j] > 0)
                             {*@
 
-                                <asp:Button name="Dice-@j" id="Dice-@j" class="btn" value="@FarkleModel.DiceRoll[j]"><img class="dice" src="@FarkleModel.DiceImg[j]"/></asp:Button>
+                                <asp:Button name="Dice-@j" id="Dice-@j" class="btn" value="@Model.DiceRoll[j]"><img class="dice" src="@Model.DiceImg[j]"/></asp:Button>
                                 
                             
                         }
@@ -51,7 +52,7 @@
             </tr>
             <tr style="height:80px">
                 <td class=" align-items-center">
-                    <button type="submit" id="btnRoll" class="btn btn-outline-light" CausesValidation="False">Roll</button>
+                    <button type="submit" id="btnRoll" class="btn btn-outline-light">Roll</button>
                     <button id="btnSubSelect" class="btn btn-outline-light">Submit Selection</button>
                     <button id="btnBank" class="btn btn-outline-light">Bank Points</button>
                 </td>
