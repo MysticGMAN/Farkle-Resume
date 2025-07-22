@@ -27,7 +27,7 @@ namespace Farkle.Controllers
 
             var model = new FarkleModel();
             //FarkleModel.DiceRoll = FarkleModel.P.DiceRoll;
-            model.DiceRoll.AddRange(new[] { 1, 2, 3, 4, 5, 6, });
+            model.DiceRoll.AddRange(new[] { 1, 2, 3, 4, 5, 6});
 
             for (int i = 0; i < model.DiceRoll.Count; i++)
             {

@@ -30,6 +30,8 @@ namespace Farkle
 
         private List<int> _diceRoll = new List<int>();
 
+        private List<int> _selectedDice = new List<int>();
+
         private Dictionary<int, int> sortedRoll = new Dictionary<int, int>()
         {
             [1] = 0,
@@ -54,6 +56,12 @@ namespace Farkle
                 _diceRoll = value;
             }
 
+        }
+
+        public List<int> SelectedDice
+        {
+            get => _selectedDice;
+            set => _selectedDice = value ?? new List<int>();
         }
 
         public int DiceLeft { get; set; }

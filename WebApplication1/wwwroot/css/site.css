@@ -185,3 +185,19 @@ div.score {
 .rules-page p{
     font-size: 18px;
 }
+
+/*.toggle-btn.highlight {
+    background-color: green;
+    color: blue;
+    border-radius: 10px;
+}*/
+
+.toggle-btn {
+    all: unset;
+}
+
+.highlight {
+    outline: 10px solid green;
+    box-shadow: 0 0 10px green;
+}
+

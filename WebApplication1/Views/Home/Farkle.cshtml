@@ -38,7 +38,7 @@
                            @* @if (Model.DiceRoll[j] > 0)
                             {*@
 
-                                <asp:Button name="Dice-@j" id="Dice-@j" class="btn" value="@Model.DiceRoll[j]"><img class="dice" src="@Model.DiceImg[j]"/></asp:Button>
+                                <Button type="button" name="Dice-@j" id="Dice-@j" class="toggle-btn" value="@Model.DiceRoll[j]"><img class="dice" src="@Model.DiceImg[j]" alt="dice"/></Button>
                                 
                             
                         }
@@ -107,3 +107,5 @@
     </div>
 
 </div>
+
+
